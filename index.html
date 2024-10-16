@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page para servicios de dron en Querétaro. Paquetes profesionales de fotografía y video aéreo.">
+    <meta name="description" content="Servicios de dron profesional en Querétaro: fotografía, video aéreo y más. Agenda una consulta hoy.">
     <title>Servicios de Dron en Querétaro | Abunda Creativo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +69,7 @@
         }
         /* Hero Section */
         .hero {
-            background-image: url('assets/img/1.png');
+            background-image: url('assets/img/dron-hero.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -78,23 +78,24 @@
         }
         .hero h1 {
             font-size: 2.5rem;
+            margin-bottom: 20px;
         }
         .hero p {
             font-size: 1.2rem;
-            margin: 20px 0;
+            margin-bottom: 30px;
         }
         .hero .cta-button {
-            margin-top: 20px;
-            background-color: #007BFF;
+            background-color: #28a745;
             color: white;
             padding: 15px 30px;
-            border-radius: 5px;
             text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
         }
         .hero .cta-button:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
-        /* Packages Section */
+        /* Paquetes Section */
         .packages {
             padding: 60px 0;
             background-color: #fff;
@@ -115,15 +116,20 @@
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
         }
         .package-card svg {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             margin-bottom: 20px;
+            color: #007BFF;
         }
         .package-card h3 {
-            margin-top: 20px;
             font-size: 1.5rem;
+            margin-top: 20px;
         }
         .package-card p {
             margin-top: 10px;
@@ -131,23 +137,73 @@
         }
         .package-card .cta-button {
             margin-top: 20px;
-            background-color: #28a745;
+            background-color: #007BFF;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
         }
         .package-card .cta-button:hover {
+            background-color: #0056b3;
+        }
+        /* Blog Section */
+        .blog {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        .blog h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .blog-post h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+        .blog-post p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        .blog-post a {
+            margin-top: 10px;
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .blog-post a:hover {
             background-color: #218838;
         }
-        /* Contact Form */
+        /* Contact Section */
         .contact {
-            background-color: #f9f9f9;
+            background-color: #fff;
             padding: 60px 0;
         }
         .contact h2 {
             text-align: center;
             margin-bottom: 40px;
+            font-size: 2rem;
         }
         .contact-form {
             max-width: 600px;
@@ -160,6 +216,7 @@
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            font-size: 1rem;
         }
         .contact-form button {
             background-color: #007BFF;
@@ -168,6 +225,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1.2rem;
         }
         .contact-form button:hover {
             background-color: #0056b3;
@@ -205,7 +263,7 @@
             <a href="#" class="logo">Abunda Creativo</a>
             <nav class="nav">
                 <a href="#packages">Paquetes</a>
-                <a href="#about">Sobre Nosotros</a>
+                <a href="#blog">Blog</a>
                 <a href="#contact">Contacto</a>
                 <a href="#contact" class="cta-button">Agenda una consulta</a>
             </nav>
@@ -221,14 +279,13 @@
         </div>
     </section>
 
-    <!-- Packages Section -->
+    <!-- Paquetes Section -->
     <section id="packages" class="packages">
         <div class="container">
             <h2>Nuestros Paquetes</h2>
             <div class="packages-grid">
                 <!-- Paquete 1 -->
                 <div class="package-card">
-                    <!-- Icono de cámara para fotografía -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h1l1-2h14l1 2h1a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 100-6 3 3 0 000 6z"/>
@@ -240,7 +297,6 @@
                 </div>
                 <!-- Paquete 2 -->
                 <div class="package-card">
-                    <!-- Icono de cámara de video -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14v3a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1h10a1 1 0 011 1v2z"/>
                     </svg>
@@ -251,7 +307,6 @@
                 </div>
                 <!-- Paquete 3 -->
                 <div class="package-card">
-                    <!-- Icono de cámara con video y fotos -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h1l1-2h14l1 2h1a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 100-6 3 3 0 000 6z"/>
@@ -264,7 +319,6 @@
                 </div>
                 <!-- Paquete 4 -->
                 <div class="package-card">
-                    <!-- Icono de evento (fuegos artificiales) -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v4m0 4v2m-6.364 1.95l3.02-1.74m2.687 1.501L14 15m2.823 3.232l-1.515-2.627M9.35 15.27L6.824 17.6M6 9.574L9.192 7M4.706 5.293l1.414 1.414M12 12l1.464-1.464M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
@@ -275,7 +329,6 @@
                 </div>
                 <!-- Paquete 5 -->
                 <div class="package-card">
-                    <!-- Icono de bienes raíces (casa) -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75V19a2 2 0 002 2h14a2 2 0 002-2v-9.25m-9 3.25v9m6-9h2a2 2 0 012 2v3m-18-5v5a2 2 0 002 2h2m-4-9v-3a2 2 0 012-2h5.5l3.5-4.5 3.5 4.5H19a2 2 0 012 2v3"/>
                     </svg>
@@ -286,7 +339,6 @@
                 </div>
                 <!-- Paquete 6 -->
                 <div class="package-card">
-                    <!-- Icono de suscripción mensual -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h1l1-2h14l1 2h1a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 100-6 3 3 0 000 6z"/>
@@ -300,7 +352,30 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog sobre Videos y Drones en Querétaro</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <img src="assets/img/blog1.jpg" alt="Blog Post 1">
+                    <h3>5 Beneficios de Usar Drones en la Filmación de Propiedades</h3>
+                    <p>Descubre cómo los drones han revolucionado la industria inmobiliaria en Querétaro, con imágenes impactantes y vistas aéreas.</p>
+                    <a href="blog-post-1.html">Leer más</a>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <img src="assets/img/blog2.jpg" alt="Blog Post 2">
+                    <h3>Mejores Técnicas de Filmación Aérea para Eventos</h3>
+                    <p>La cobertura de eventos con drones ofrece una nueva perspectiva. Aquí te contamos las mejores técnicas para capturar esos momentos inolvidables.</p>
+                    <a href="blog-post-2.html">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Agenda tu Consulta Gratuita</h2>
