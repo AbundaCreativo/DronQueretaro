@@ -14,8 +14,8 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #F0F4F8;
+            color: #0A3D62;
         }
         .container {
             max-width: 1200px;
@@ -28,23 +28,21 @@
         p {
             font-weight: 400;
             line-height: 1.6;
+            color: #333;
         }
         /* Header */
         .header {
-            background-color: #fff;
+            background-color: #0A3D62;
             padding: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            color: white;
         }
         .header .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #333;
+            color: #fff;
             text-decoration: none;
         }
         .header .nav {
@@ -53,28 +51,31 @@
         }
         .header .nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-weight: 500;
         }
         .header .cta-button {
-            background-color: #007BFF;
-            color: white;
+            background-color: #F0F4F8;
+            color: #0A3D62;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: 700;
         }
         .header .cta-button:hover {
-            background-color: #0056b3;
+            background-color: #0A3D62;
+            color: #FFF;
+            border: 2px solid white;
         }
         /* Hero Section */
         .hero {
-            background-image: url('assets/img/dron-hero.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #0A3D62;
             color: white;
             padding: 120px 0;
             text-align: center;
+            background-image: url('assets/img/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
         }
         .hero h1 {
             font-size: 2.5rem;
@@ -85,25 +86,27 @@
             margin-bottom: 30px;
         }
         .hero .cta-button {
-            background-color: #28a745;
-            color: white;
+            background-color: #F0F4F8;
+            color: #0A3D62;
             padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
             font-size: 1.2rem;
         }
         .hero .cta-button:hover {
-            background-color: #218838;
+            background-color: white;
+            border: 2px solid #0A3D62;
         }
         /* Paquetes Section */
         .packages {
             padding: 60px 0;
-            background-color: #fff;
+            background-color: #F0F4F8;
         }
         .packages h2 {
             text-align: center;
             margin-bottom: 40px;
             font-size: 2rem;
+            color: #0A3D62;
         }
         .packages-grid {
             display: grid;
@@ -111,11 +114,11 @@
             gap: 40px;
         }
         .package-card {
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
         .package-card:hover {
@@ -125,11 +128,12 @@
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
-            color: #007BFF;
+            color: #0A3D62;
         }
         .package-card h3 {
             font-size: 1.5rem;
             margin-top: 20px;
+            color: #0A3D62;
         }
         .package-card p {
             margin-top: 10px;
@@ -137,24 +141,27 @@
         }
         .package-card .cta-button {
             margin-top: 20px;
-            background-color: #007BFF;
+            background-color: #0A3D62;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
         }
         .package-card .cta-button:hover {
-            background-color: #0056b3;
+            background-color: white;
+            color: #0A3D62;
+            border: 2px solid #0A3D62;
         }
         /* Blog Section */
         .blog {
             padding: 60px 0;
-            background-color: #f9f9f9;
+            background-color: #fff;
         }
         .blog h2 {
             text-align: center;
             margin-bottom: 40px;
             font-size: 2rem;
+            color: #0A3D62;
         }
         .blog-grid {
             display: grid;
@@ -162,48 +169,40 @@
             gap: 40px;
         }
         .blog-post {
-            background-color: #fff;
+            background-color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            cursor: pointer;
         }
         .blog-post:hover {
             transform: translateY(-10px);
         }
         .blog-post img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
         }
         .blog-post h3 {
             margin-top: 15px;
             font-size: 1.5rem;
+            color: #0A3D62;
         }
         .blog-post p {
             margin-top: 10px;
             font-size: 1rem;
-        }
-        .blog-post a {
-            margin-top: 10px;
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .blog-post a:hover {
-            background-color: #218838;
+            color: #333;
         }
         /* Contact Section */
         .contact {
-            background-color: #fff;
+            background-color: #F0F4F8;
             padding: 60px 0;
         }
         .contact h2 {
             text-align: center;
             margin-bottom: 40px;
             font-size: 2rem;
+            color: #0A3D62;
         }
         .contact-form {
             max-width: 600px;
@@ -215,24 +214,26 @@
         .contact-form input, .contact-form textarea {
             padding: 15px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 30px;
             font-size: 1rem;
         }
         .contact-form button {
-            background-color: #007BFF;
+            background-color: #0A3D62;
             color: white;
             padding: 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             font-size: 1.2rem;
         }
         .contact-form button:hover {
-            background-color: #0056b3;
+            background-color: white;
+            color: #0A3D62;
+            border: 2px solid #0A3D62;
         }
         /* Footer */
         .footer {
-            background-color: #333;
+            background-color: #0A3D62;
             color: white;
             padding: 40px 0;
             text-align: center;
@@ -252,6 +253,35 @@
         }
         .footer .social-media a:hover {
             text-decoration: underline;
+        }
+
+        /* Icon Improvements */
+        .icon-camera {
+            fill: #0A3D62;
+        }
+        .icon-video {
+            fill: #0A3D62;
+        }
+        .icon-event {
+            fill: #0A3D62;
+        }
+        .icon-real-estate {
+            fill: #0A3D62;
+        }
+        .icon-monthly {
+            fill: #0A3D62;
+        }
+
+        /* Blog expansion for internal page */
+        .blog-content {
+            display: none;
+            padding: 20px;
+            background-color: #F0F4F8;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        .blog-post.active .blog-content {
+            display: block;
         }
     </style>
 </head>
@@ -286,78 +316,72 @@
             <div class="packages-grid">
                 <!-- Paquete 1 -->
                 <div class="package-card">
-                    <!-- Icono mejorado: Cámara fotográfica profesional -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <circle cx="32" cy="32" r="20" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-camera" width="80" height="80">
+                        <circle cx="32" cy="32" r="20"/>
                         <rect x="16" y="16" width="32" height="32" fill="white"/>
                     </svg>
                     <h3>Fotografía Aérea Básica</h3>
                     <p>15 fotos aéreas de alta resolución</p>
-                    <p>$3,500 MXN</p>
+                    <p><strong>$3,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
                 <!-- Paquete 2 -->
                 <div class="package-card">
-                    <!-- Icono mejorado: Cámara de video profesional -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <rect x="10" y="20" width="44" height="24" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-video" width="80" height="80">
+                        <rect x="10" y="20" width="44" height="24"/>
                         <polygon points="54,32 64,26 64,38" fill="white"/>
                     </svg>
                     <h3>Video Aéreo Básico</h3>
                     <p>Video de 1-3 minutos en 4K</p>
-                    <p>$4,500 MXN</p>
+                    <p><strong>$4,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
                 <!-- Paquete 3 -->
                 <div class="package-card">
-                    <!-- Icono combinado: Cámara de fotos y video -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <circle cx="32" cy="32" r="20" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-camera" width="80" height="80">
+                        <circle cx="32" cy="32" r="20"/>
                         <polygon points="48,16 64,32 48,48" fill="white"/>
                         <rect x="16" y="16" width="16" height="16" fill="white"/>
                     </svg>
                     <h3>Fotografía y Video Completo</h3>
                     <p>20 fotos editadas + Video con música</p>
-                    <p>$8,500 MXN</p>
+                    <p><strong>$8,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
                 <!-- Paquete 4 -->
                 <div class="package-card">
-                    <!-- Icono de eventos: Fuegos artificiales -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <circle cx="32" cy="32" r="30" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-event" width="80" height="80">
+                        <circle cx="32" cy="32" r="30"/>
                         <path d="M32,2 L32,62 M2,32 L62,32" stroke="white" stroke-width="4"/>
                         <circle cx="32" cy="32" r="6" fill="white"/>
                     </svg>
                     <h3>Eventos</h3>
                     <p>Video resumen + 30 fotos editadas</p>
-                    <p>$8,500 MXN</p>
+                    <p><strong>$8,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
                 <!-- Paquete 5 -->
                 <div class="package-card">
-                    <!-- Icono de bienes raíces: Casa moderna -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <rect x="10" y="24" width="44" height="36" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-real-estate" width="80" height="80">
+                        <rect x="10" y="24" width="44" height="36"/>
                         <polygon points="32,12 64,36 0,36" fill="white"/>
                     </svg>
                     <h3>Bienes Raíces Premium</h3>
                     <p>Video tour y fotos aéreas</p>
-                    <p>$15,500 MXN</p>
+                    <p><strong>$15,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
                 <!-- Paquete 6 -->
                 <div class="package-card">
-                    <!-- Icono mensual: Calendario -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
-                        <rect x="10" y="12" width="44" height="42" fill="#007BFF"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="icon-monthly" width="80" height="80">
+                        <rect x="10" y="12" width="44" height="42"/>
                         <rect x="16" y="24" width="32" height="24" fill="white"/>
                         <circle cx="24" cy="18" r="4" fill="white"/>
                         <circle cx="40" cy="18" r="4" fill="white"/>
                     </svg>
                     <h3>Mensual</h3>
                     <p>2 vuelos y 30 fotos mensuales</p>
-                    <p>$12,500 MXN</p>
+                    <p><strong>$12,500 MXN</strong></p>
                     <a href="#contact" class="cta-button">Seleccionar Paquete</a>
                 </div>
             </div>
@@ -370,18 +394,20 @@
             <h2>Blog sobre Videos y Drones en Querétaro</h2>
             <div class="blog-grid">
                 <!-- Blog Post 1 -->
-                <div class="blog-post">
+                <div class="blog-post" onclick="toggleBlogContent(this)">
                     <img src="assets/img/blog1.jpg" alt="Blog Post 1">
                     <h3>5 Beneficios de Usar Drones en la Filmación de Propiedades</h3>
-                    <p>Descubre cómo los drones han revolucionado la industria inmobiliaria en Querétaro, con imágenes impactantes y vistas aéreas.</p>
-                    <a href="blog-post-1.html">Leer más</a>
+                    <div class="blog-content">
+                        <p>Los drones ofrecen una nueva perspectiva a la hora de filmar propiedades, lo que puede atraer a más compradores y mejorar la calidad del contenido multimedia. Entre los beneficios se incluyen...</p>
+                    </div>
                 </div>
                 <!-- Blog Post 2 -->
-                <div class="blog-post">
+                <div class="blog-post" onclick="toggleBlogContent(this)">
                     <img src="assets/img/blog2.jpg" alt="Blog Post 2">
                     <h3>Mejores Técnicas de Filmación Aérea para Eventos</h3>
-                    <p>La cobertura de eventos con drones ofrece una nueva perspectiva. Aquí te contamos las mejores técnicas para capturar esos momentos inolvidables.</p>
-                    <a href="blog-post-2.html">Leer más</a>
+                    <div class="blog-content">
+                        <p>Capturar eventos desde el aire ofrece una perspectiva única que destaca la magnitud y energía del evento. Algunas técnicas clave para obtener resultados profesionales incluyen...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -412,5 +438,10 @@
         </div>
     </footer>
 
+    <script>
+        function toggleBlogContent(element) {
+            element.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
