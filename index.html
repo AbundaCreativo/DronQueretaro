@@ -22,6 +22,7 @@
             --text-color: #333333;
             --background-color: #FFFFFF;
             --font-family: 'Poppins', sans-serif;
+            --whatsapp-color: #25D366;
         }
 
         /* Reset */
@@ -73,7 +74,11 @@
             color: var(--primary-color);
         }
 
-        .logo span, .logo-footer span {
+        .logo-footer span {
+            color: var(--accent-color);
+        }
+
+        .logo-footer span {
             color: var(--accent-color);
         }
 
@@ -319,9 +324,7 @@
         }
 
         .cta-button {
-            background-color: #
-
-fff;
+            background-color: #fff;
             color: var(--primary-color);
         }
 
@@ -335,11 +338,6 @@ fff;
             display: flex;
             flex-wrap: wrap;
             gap: 50px;
-        }
-
-        .contact-form, .contact-info {
-            flex: 1;
-            min-width: 300px;
         }
 
         .contact-form {
@@ -390,14 +388,19 @@ fff;
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #25D366;
+            background-color: var(--whatsapp-color);
             color: white;
-            font-size: 24px;
             padding: 15px;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             transition: transform 0.3s;
+        }
+
+        .whatsapp-button svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
         }
 
         .whatsapp-button:hover {
@@ -423,6 +426,15 @@ fff;
         .footer-nav a {
             color: #fff;
             font-weight: 500;
+        }
+
+        .logo-footer {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .logo-footer span {
+            color: var(--accent-color);
         }
 
         /* Responsividad */
@@ -469,9 +481,6 @@ fff;
     </style>
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <!-- Font Awesome para los íconos -->
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-    <!-- Reemplaza 'yourkitid' con tu propio Kit ID de Font Awesome -->
 </head>
 <body>
     <!-- Header -->
@@ -518,21 +527,27 @@ fff;
             <div class="services-grid">
                 <!-- Servicio 1 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-camera"></i></div>
+                    <div class="icon">
+                        <img src="assets/icons/camera.svg" alt="Cámara Icon">
+                    </div>
                     <h3>Fotografía Aérea Profesional</h3>
                     <p>Capturamos imágenes aéreas impresionantes para destacar tu proyecto o evento.</p>
                     <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Fotograf%C3%ADa%20A%C3%A9rea." class="cta-button">Solicitar Información</a>
                 </div>
                 <!-- Servicio 2 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-video"></i></div>
+                    <div class="icon">
+                        <img src="assets/icons/video.svg" alt="Video Icon">
+                    </div>
                     <h3>Producción de Video Aéreo</h3>
                     <p>Creación de videos aéreos de alta calidad que cuentan tu historia desde una nueva perspectiva.</p>
                     <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Producci%C3%B3n%20de%20Video%20A%C3%A9reo." class="cta-button">Solicitar Información</a>
                 </div>
                 <!-- Servicio 3 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-wrench"></i></div>
+                    <div class="icon">
+                        <img src="assets/icons/inspection.svg" alt="Inspección Icon">
+                    </div>
                     <h3>Inspecciones y Monitoreo</h3>
                     <p>Soluciones de inspección aérea para construcción, agricultura y más.</p>
                     <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Inspecciones%20y%20Monitoreo%20con%20drones." class="cta-button">Solicitar Información</a>
@@ -567,9 +582,7 @@ fff;
                 <div class="portfolio-item">
                     <img src="assets/img/portfolio3.jpg" alt="Proyecto 3">
                     <div class="portfolio-overlay">
-                        <
-
-h3>Turismo y Naturaleza</h3>
+                        <h3>Turismo y Naturaleza</h3>
                         <p>Videos que muestran destinos turísticos desde nuevas alturas.</p>
                     </div>
                 </div>
@@ -631,9 +644,9 @@ h3>Turismo y Naturaleza</h3>
                     <p><strong>Email:</strong> <a href="mailto:abundacreativo@gmail.com">abundacreativo@gmail.com</a></p>
                     <p>Querétaro, México</p>
                     <ul class="social-media">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="#"><img src="assets/icons/instagram.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn Icon"></a></li>
                     </ul>
                 </div>
             </div>
@@ -658,36 +671,8 @@ h3>Turismo y Naturaleza</h3>
 
     <!-- Botón de WhatsApp flotante -->
     <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20drone." class="whatsapp-button">
-        <i class="fab fa-whatsapp"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.647.5.5 5.65.5 12.004c0 2.12.552 4.194 1.601 6.026L.666 23.5l5.59-1.457A11.49 11.49 0 0 0 12 23.504C18.353 23.504 23.5 18.35 23.5 12.004 23.5 5.65 18.353.5 12 .5zm5.885 16.148c-.234.662-1.358 1.27-1.884 1.346-.485.069-1.063.097-1.711-.106a10.4 10.4 0 0 1-1.715-.747c-3.01-1.35-4.93-4.738-5.07-4.958-.141-.22-1.206-1.61-1.206-3.07 0-1.459.758-2.174 1.025-2.474.269-.3.59-.371.79-.371h.569c.184 0 .431-.034.676.517.265.594.887 2.066.965 2.215.079.148.132.317.026.512-.106.196-.16.317-.317.493-.158.175-.33.38-.47.509-.16.15-.328.314-.14.616.188.301.835 1.372 1.789 2.227 1.233 1.105 2.261 1.451 2.568 1.588.306.137.485.115.669-.071.184-.186.772-.855.98-1.147.209-.292.422-.244.705-.146.282.097 1.782.836 2.088.988.305.151.511.223.586.35.079.127.079.738-.156 1.401z"/></svg>
     </a>
 
-    <!-- Scripts Integrados -->
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-    <script>
-        // Menú Responsive
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.nav ul');
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        });
-
-        // Slider de Testimonios (simplificado)
-        let testimonials = document.querySelectorAll('.testimonial');
-        let currentTestimonial = 0;
-
-        function showTestimonial(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.style.display = i === index ? 'block' : 'none';
-            });
-        }
-
-        setInterval(() => {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }, 5000);
-
-        showTestimonial(currentTestimonial);
-    </script>
 </body>
 </html>
