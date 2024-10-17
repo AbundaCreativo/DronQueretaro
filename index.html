@@ -201,6 +201,21 @@
             margin-bottom: 20px;
         }
 
+        .service-card .cta-button {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .service-card .cta-button:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+
         /* Portafolio */
         .portfolio-grid {
             display: flex;
@@ -304,7 +319,9 @@
         }
 
         .cta-button {
-            background-color: #fff;
+            background-color: #
+
+fff;
             color: var(--primary-color);
         }
 
@@ -325,31 +342,25 @@
             min-width: 300px;
         }
 
-        .contact-form .form-group {
+        .contact-form {
+            text-align: center;
+        }
+
+        .contact-form p {
+            font-size: 1.2rem;
             margin-bottom: 20px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            height: 150px;
         }
 
         .contact-info h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .contact-info p {
             font-size: 1rem;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .contact-info a {
@@ -360,6 +371,7 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            justify-content: center;
             margin-top: 20px;
         }
 
@@ -371,6 +383,25 @@
 
         .social-media li a:hover {
             color: var(--accent-color);
+        }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
         }
 
         /* Footer */
@@ -490,21 +521,21 @@
                     <div class="icon"><i class="fas fa-camera"></i></div>
                     <h3>Fotografía Aérea Profesional</h3>
                     <p>Capturamos imágenes aéreas impresionantes para destacar tu proyecto o evento.</p>
-                    <a href="#contact" class="cta-button">Más Información</a>
+                    <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Fotograf%C3%ADa%20A%C3%A9rea." class="cta-button">Solicitar Información</a>
                 </div>
                 <!-- Servicio 2 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-video"></i></div>
                     <h3>Producción de Video Aéreo</h3>
                     <p>Creación de videos aéreos de alta calidad que cuentan tu historia desde una nueva perspectiva.</p>
-                    <a href="#contact" class="cta-button">Más Información</a>
+                    <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Producci%C3%B3n%20de%20Video%20A%C3%A9reo." class="cta-button">Solicitar Información</a>
                 </div>
                 <!-- Servicio 3 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-wrench"></i></div>
                     <h3>Inspecciones y Monitoreo</h3>
                     <p>Soluciones de inspección aérea para construcción, agricultura y más.</p>
-                    <a href="#contact" class="cta-button">Más Información</a>
+                    <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Inspecciones%20y%20Monitoreo%20con%20drones." class="cta-button">Solicitar Información</a>
                 </div>
             </div>
         </div>
@@ -536,7 +567,9 @@
                 <div class="portfolio-item">
                     <img src="assets/img/portfolio3.jpg" alt="Proyecto 3">
                     <div class="portfolio-overlay">
-                        <h3>Turismo y Naturaleza</h3>
+                        <
+
+h3>Turismo y Naturaleza</h3>
                         <p>Videos que muestran destinos turísticos desde nuevas alturas.</p>
                     </div>
                 </div>
@@ -587,33 +620,20 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contacto</h2>
-            <p class="section-subtitle">Estamos aquí para ayudarte. ¡Envíanos un mensaje!</p>
+            <p class="section-subtitle">Estamos aquí para ayudarte. ¡Envíanos un mensaje por WhatsApp o correo!</p>
             <div class="contact-wrapper">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Correo Electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Teléfono" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Enviar Mensaje</button>
-                </form>
+                <div class="contact-form">
+                    <p>Envíanos un mensaje directo:</p>
+                    <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20drone." class="cta-button">Chatear en WhatsApp</a>
+                </div>
                 <div class="contact-info">
                     <h3>Información de Contacto</h3>
-                    <p><strong>Teléfono:</strong> <a href="tel:+5214420000000">+52 1 442 000 0000</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@abundacreativo.com">info@abundacreativo.com</a></p>
-                    <p><strong>Dirección:</strong> Av. Principal #123, Querétaro, Qro.</p>
+                    <p><strong>Email:</strong> <a href="mailto:abundacreativo@gmail.com">abundacreativo@gmail.com</a></p>
+                    <p>Querétaro, México</p>
                     <ul class="social-media">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <!-- Agrega más redes si es necesario -->
                     </ul>
                 </div>
             </div>
@@ -636,10 +656,13 @@
         </div>
     </footer>
 
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/524421783536?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20drone." class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Scripts Integrados -->
-    <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-    <!-- Reemplaza 'yourkitid' con tu propio Kit ID de Font Awesome -->
     <script>
         // Menú Responsive
         const menuToggle = document.querySelector('.menu-toggle');
