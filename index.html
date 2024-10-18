@@ -16,11 +16,11 @@
     <style>
         /* Variables de Color */
         :root {
-            --primary-color: #2C3E50;
-            --secondary-color: #ECF0F1;
-            --accent-color: #E74C3C;
-            --text-color: #34495E;
-            --background-color: #F8F9FA;
+            --primary-color: #607D8B; /* Azul grisáceo */
+            --secondary-color: #FFFFFF; /* Blanco */
+            --accent-color: #FF9900; /* Naranja vibrante */
+            --text-color: #333333; /* Gris oscuro */
+            --background-color: #FFFFFF; /* Fondo blanco */
             --font-family: 'Poppins', sans-serif;
             --whatsapp-color: #25D366;
         }
@@ -55,7 +55,7 @@
 
         /* Header */
         .header {
-            background-color: var(--background-color);
+            background-color: var(--secondary-color);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -72,7 +72,7 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--text-color);
         }
 
         .logo span {
@@ -119,17 +119,6 @@
             color: white;
             text-align: center;
             padding: 0 20px;
-        }
-
-        .hero video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(0.5);
         }
 
         .hero h1 {
@@ -242,7 +231,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(44, 62, 80, 0.8);
+            background: rgba(96, 125, 139, 0.8);
             color: #fff;
             opacity: 0;
             display: flex;
